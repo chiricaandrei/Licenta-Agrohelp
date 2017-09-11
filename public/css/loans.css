@@ -1,0 +1,20 @@
+.blacktext{
+    color:black;
+}
+.gray{
+    background-color: #E8E8E8;
+    height: 50px;
+    border-radius:10px;
+}
+.modal-body{
+    color:black;
+}
+.table{
+	display:block;
+	float:left;
+}
+
+.al-left{
+    margin-right: 360px;
+    color:black;
+}

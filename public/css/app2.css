@@ -1,0 +1,10 @@
+  html{
+    background: url("../uploads/JD.jpg" );
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    height: 100%;
+}
