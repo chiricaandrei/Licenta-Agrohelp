@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\field;
+use Auth;
 
 class fieldController extends Controller
 {
@@ -11,10 +13,11 @@ class fieldController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
-    }
+     public function index()
+     {   $fields = field::all();
+         return view("crop")->with('fields', $fields);
+     }
+ 
 
     /**
      * Show the form for creating a new resource.
@@ -32,10 +35,23 @@ class fieldController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+     public function store(Request $request)
+     { $id = Auth::id();
+         
+ 
+         $field=New field;
+         $field->cod_user=$id;
+         $field->nume=$request->name;
+         $field->suprafata=$request->surface;
+         $field->culturaanprecedent=$request->lastyearcrop;
+         $field->POLIGON=$request->coords;
+         $field->save();
+     
+ 
+         $fields = field::all();
+     
+     return redirect()->back();
+     }
 
     /**
      * Display the specified resource.
@@ -43,11 +59,12 @@ class fieldController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
-
+     public function show($id)
+     {
+         $field=field::find($id);
+         dd($field);
+         return $field;
+     }
     /**
      * Show the form for editing the specified resource.
      *

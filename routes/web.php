@@ -19,9 +19,6 @@ Route::get('home', function () {
     return view('home');
 });
 
-Route::get('fields', function () {
-    return view('crop');
-});
 
 Route::get('finance/purchases', function () {
     return view('purchases');
@@ -45,6 +42,8 @@ Auth::routes();
 Route::resource('/home', 'HomeController');
 Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@update_avatar');
+
+Route::resource('/fields','fieldController');
 
 
 Route::resource('/finance/loans','loanController');
