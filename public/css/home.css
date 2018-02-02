@@ -1,8 +1,9 @@
 
 #map2{
-  height: 400px;
-  width: 100%;
+  height: 700px;
+  width: 94%;
   border-radius: 25px;
+  left:3%
  }
 
 #map {
@@ -119,3 +120,262 @@
     font-weight: 500;
     padding: 6px 12px;
   }
+  /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      #target {
+        width: 345px;
+      }
+      @import "compass/css3";
+      
+      /* Import Icon fonts and web font */
+      
+      @import "https://fonts.googleapis.com/css?family=Open+Sans:400,300,700";
+      @import "http://weloveiconfonts.com/api/?family=entypo";
+      @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+      
+      
+      /* entypo */
+      [class*="entypo-"]:before {
+        font-family: 'entypo', sans-serif;
+      }
+      
+      /* fontawesome */
+      [class*="fontawesome-"]:before {
+        font-family: 'FontAwesome', sans-serif;
+      }
+      
+      
+      
+      
+     
+      /* Import Icon fonts and web font */
+      @import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Playfair+Display|Raleway|Roboto");     
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+@import url("http://weloveiconfonts.com/api/?family=fontawesome");
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,100');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css');
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
+
+.vreme {
+	color: white;
+	font-family: 'Roboto';
+	font-weight: 100;
+	line-height: 1.1;
+	letter-spacing: 0.025em;
+	margin: 0; padding: 0;
+}
+a {
+	color: white;
+	opacity: 0.54;
+	text-decoration: none;
+}
+a:hover,
+.active {opacity: 1;}
+
+.wrapper {
+	width: 103.5%;
+	margin: 0 auto;
+}
+.searchbar,
+.button {
+  
+  border-radius: 8px;
+  background:rgb(127, 169, 14);
+	height: 45px;
+	margin: 1em 0 4em;
+	padding: 0;
+	font: 400 2rem 'Roboto';
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	color: white;
+  border: none;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.searchbar {
+  font-weight: 100;
+	font-family: 'Roboto';
+  border-radius: 8px;
+  background:rgb(127, 169, 14);
+	float: left;
+	width: 100%;
+	border-bottom: solid thin white;
+	color: #E8E8E8;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+}
+
+.searchbar::-webkit-input-placeholder {color: white; opacity: 0.35;}
+.searchbar::-moz-placeholder {color: white; opacity: 0.35;}
+.searchbar:-ms-input-placeholder {color: white; opacity: 0.35;}
+.searchbar:-moz-placeholder {color: white; opacity: 0.35;}
+
+.button:focus,
+.searchbar:focus {outline: none; color: white;}
+.searchbar:focus::-webkit-input-placeholder {color: white; opacity: 0.7;}
+.searchbar:focus::-moz-placeholder {color: white; opacity: 0.7;}
+.searchbar:focus:-ms-input-placeholder {color: white; opacity: 0.7;}
+.searchbar:focus:-moz-placeholder {color: white; opacity: 0.7;}
+
+.button {
+	float: right;
+  width: 100%;
+}
+.panel {
+	width: 100%;
+  display: inline-block;
+  margin-bottom: 22px;
+  background-color: rgb(127, 169, 14);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.weather {
+	width: 100%;
+	margin-top: 20px;
+	display: inline-block;
+}
+.city {
+	text-align: left;
+	border-bottom: solid thin white;
+	text-transform: uppercase;
+	color: #E8E8E8;
+	color: rgba(255, 255, 255, 0.7);
+}
+.group {
+	width: 165px;
+	margin-bottom: 20px;
+	text-align: right;
+	float: right;
+	clear: both;
+}
+.temp {
+	font-size: 4.5em;
+	font-weight: 300;
+	line-height: 0.75;
+}
+.celsius,
+.fahrenheit,
+.divider {
+	font-size: 1.75rem;
+	vertical-align: super;
+}
+.divider {
+	margin: 0 0.05em;
+}
+.forecast {
+	display: table;
+	text-transform: uppercase;
+	width: 100%;
+}
+.block {
+	display: table-cell;
+	padding: 1.5em 0 0 0;
+	text-align: center;
+}
+.high {
+	font-weight: 300;
+	margin: 0.25em 0;
+}
+
+.secondary {opacity: 0.7;}
+.transparent {background: transparent;}
+.hot {background: #FF5722;}
+.warm {background: #FF6F00;}
+.cool {background: #2196F3;}
+.cold {background: #3F51B5;}
+.color404 {background: #161616;}
+.button-hot {background: #BF360C;}
+.button-warm {background: #B34E00;}
+.button-cool {background: #0D47A1;}
+.button-cold {background: #1A237E;}
+.button404 {background: black;}
